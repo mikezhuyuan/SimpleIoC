@@ -8,8 +8,7 @@ namespace SimpleIoC
     class Program
     {
         static void Main(string[] args)
-        {
-            var ex = new Exception();
+        {            
             IoC.Register<INested3>(new Nested3()); //singleton
             IoC.Register<INested2>(IoC.Create<Nested2>); //auto resolve dependencies
             IoC.Register<INested1>(IoC.Create<Nested1>); //auto resolve dependencies
