@@ -31,7 +31,7 @@ namespace SimpleIoC
         }
 
         /// <summary>
-        /// Create an concrete class, only call ctor with all interface args, recursively resolve args
+        /// Create a concrete class, only call ctor with all interface args, recursively resolve args
         /// </summary>        
         public static T Create<T>() where T : class
         {
